@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css?family=Rubik:400,500&display=swap");
+
+// Primary
+$softblue: hsl(231, 69%, 60%);
+$softred: hsl(0, 94%, 66%);
+
+// Neutral
+$grayishblue: hsl(229, 8%, 60%);
+$verydarkblue: hsl(229, 31%, 21%);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 500;
+  color: $verydarkblue;
+}
+
+p {
+  opacity: 50%;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+header {
+  .nav-bar-container {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    justify-content: space-between;
+    margin-left: 171px;
+    margin-top: 48px;
+    margin-right: 165px;
+
+    .nav-bar-container-links {
+      font-size: 13px;
+      letter-spacing: 1.5px;
+      a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $verydarkblue;
+        margin-right: 48px;
+      }
+      button {
+        height: 40px;
+        width: 111px;
+        border: none;
+        background-color: $softred;
+        color: white;
+        border-radius: 5px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+main {
+  .bookmark-container {
+    display: flex;
+    align-items: center;
+    margin-left: 165px;
+    margin-top: 114px;
+    .bookmark-container-header {
+      margin-right: 65px;
+      font-weight: medium;
+      width: 540px;
+
+      h1 {
+      }
+      p {
+      }
+      .bookmark-container-buttons {
+        display: flex;
+      }
+    }
+
+    img {
+      margin-right: 91px;
+    }
+  }
+}
