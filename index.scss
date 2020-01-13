@@ -58,6 +58,7 @@ header {
         color: white;
         border-radius: 5px;
         text-transform: uppercase;
+        border: 1px solid $grayishblue;
       }
     }
   }
@@ -66,6 +67,7 @@ header {
 main {
   .bookmark-container {
     display: flex;
+    position: relative;
     align-items: center;
     margin-left: 165px;
     margin-top: 114px;
@@ -73,18 +75,60 @@ main {
       margin-right: 65px;
       font-weight: medium;
       width: 540px;
+      height: 292px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
 
       h1 {
       }
       p {
+        font-size: 18px;
       }
       .bookmark-container-buttons {
         display: flex;
+
+        button {
+          border: none;
+          height: 48px;
+          border-radius: 5px;
+          width: 161px;
+          font-size: 14px;
+          font-weight: 600;
+
+          &:nth-child(1) {
+            background-color: $softblue;
+            color: white;
+            margin-right: 1rem;
+            box-shadow: 0px 8px 8px -4px rgba(74, 94, 208, 0.2);
+          }
+          &:nth-child(2) {
+            background-color: #f7f7f7;
+            color: $verydarkblue;
+            opacity: 75%;
+            box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.2);
+          }
+        }
       }
     }
 
     img {
       margin-right: 91px;
+      // width: 579px;
+      // height: 386px;
+      // box-shadow: 0px 8px 8px -4px rgba(0, 0, 0, 0.5);
+    }
+
+    .curved-rectangle {
+      position: absolute;
+      right: -37%;
+      bottom: 0;
+      z-index: -4;
+      width: 1000px;
+      height: 352px;
+      background-color: $softblue;
+      border-top-left-radius: 316.5px;
+      border-bottom-left-radius: 316.5px;
     }
   }
 }

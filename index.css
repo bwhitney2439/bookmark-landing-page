@@ -59,12 +59,14 @@ header .nav-bar-container .nav-bar-container-links button {
   color: white;
   border-radius: 5px;
   text-transform: uppercase;
+  border: 1px solid #9194a1;
 }
 
 main .bookmark-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -76,6 +78,21 @@ main .bookmark-container .bookmark-container-header {
   margin-right: 65px;
   font-weight: medium;
   width: 540px;
+  height: 292px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .bookmark-container .bookmark-container-header p {
+  font-size: 18px;
 }
 
 main .bookmark-container .bookmark-container-header .bookmark-container-buttons {
@@ -84,7 +101,44 @@ main .bookmark-container .bookmark-container-header .bookmark-container-buttons 
   display: flex;
 }
 
+main .bookmark-container .bookmark-container-header .bookmark-container-buttons button {
+  border: none;
+  height: 48px;
+  border-radius: 5px;
+  width: 161px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+main .bookmark-container .bookmark-container-header .bookmark-container-buttons button:nth-child(1) {
+  background-color: #5368df;
+  color: white;
+  margin-right: 1rem;
+  -webkit-box-shadow: 0px 8px 8px -4px rgba(74, 94, 208, 0.2);
+          box-shadow: 0px 8px 8px -4px rgba(74, 94, 208, 0.2);
+}
+
+main .bookmark-container .bookmark-container-header .bookmark-container-buttons button:nth-child(2) {
+  background-color: #f7f7f7;
+  color: #252b46;
+  opacity: 75%;
+  -webkit-box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.2);
+          box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.2);
+}
+
 main .bookmark-container img {
   margin-right: 91px;
+}
+
+main .bookmark-container .curved-rectangle {
+  position: absolute;
+  right: -37%;
+  bottom: 0;
+  z-index: -4;
+  width: 1000px;
+  height: 352px;
+  background-color: #5368df;
+  border-top-left-radius: 316.5px;
+  border-bottom-left-radius: 316.5px;
 }
 /*# sourceMappingURL=index.css.map */
