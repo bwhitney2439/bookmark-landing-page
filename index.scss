@@ -65,12 +65,17 @@ header {
 }
 
 main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   .bookmark-container {
-    display: flex;
     position: relative;
-    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 91.5px;
     margin-left: 165px;
     margin-top: 114px;
+    margin-bottom: 80px;
     .bookmark-container-header {
       margin-right: 65px;
       font-weight: medium;
@@ -79,6 +84,7 @@ main {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      align-self: center;
 
       h1 {
       }
@@ -113,18 +119,111 @@ main {
     }
 
     img {
-      margin-right: 91px;
-      // width: 579px;
-      // height: 386px;
-      // box-shadow: 0px 8px 8px -4px rgba(0, 0, 0, 0.5);
+      // margin-right: 91px;
+      // width: auto;
     }
 
     .curved-rectangle {
       position: absolute;
-      right: -37%;
+      right: -45%;
       bottom: 0;
       z-index: -4;
-      width: 1000px;
+      min-width: 1000px;
+      height: 352px;
+      background-color: $softblue;
+      border-top-left-radius: 316.5px;
+      border-bottom-left-radius: 316.5px;
+    }
+  }
+
+  .features-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 149px;
+
+    .features-container-header {
+      text-align: center;
+      width: 540px;
+      height: 152px;
+
+      h2 {
+        margin-bottom: 16px;
+        font-size: 32px;
+      }
+    }
+
+    .features-container-tabs {
+      width: 730px;
+      height: 49px;
+      display: flex;
+      justify-content: space-around;
+      border-bottom: 1px solid rgb(155, 155, 155);
+      margin-bottom: 72px;
+
+      a {
+        text-align: center;
+        text-decoration: none;
+        height: 100%;
+        width: 243px;
+        font-size: 16px;
+        color: $verydarkblue;
+
+        &:nth-child(1) {
+          border-bottom: 4px solid $softred;
+        }
+      }
+    }
+
+    .features-container-slideshow {
+      display: flex;
+      flex-direction: column;
+
+      // .hide {
+      //   display: ;
+      // }
+
+      .tab {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 1106px;
+        height: 346px;
+
+        .tab-details {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          width: 445px;
+          height: 232px;
+
+          h2 {
+            font-size: 32px;
+            color: $verydarkblue;
+            font-weight: 500;
+          }
+
+          button {
+            width: 114px;
+            height: 48px;
+            border-radius: 5px;
+            border: none;
+            background-color: $softblue;
+            color: white;
+            box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.2);
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    .curved-rectangle {
+      position: absolute;
+      left: -45%;
+      bottom: 0;
+      z-index: -4;
+      min-width: 1000px;
       height: 352px;
       background-color: $softblue;
       border-top-left-radius: 316.5px;

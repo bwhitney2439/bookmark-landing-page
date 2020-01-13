@@ -62,16 +62,31 @@ header .nav-bar-container .nav-bar-container-links button {
   border: 1px solid #9194a1;
 }
 
-main .bookmark-container {
+main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .bookmark-container {
   position: relative;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-right: 91.5px;
   margin-left: 165px;
   margin-top: 114px;
+  margin-bottom: 80px;
 }
 
 main .bookmark-container .bookmark-container-header {
@@ -89,6 +104,8 @@ main .bookmark-container .bookmark-container-header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 main .bookmark-container .bookmark-container-header p {
@@ -126,16 +143,132 @@ main .bookmark-container .bookmark-container-header .bookmark-container-buttons 
           box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.2);
 }
 
-main .bookmark-container img {
-  margin-right: 91px;
-}
-
 main .bookmark-container .curved-rectangle {
   position: absolute;
-  right: -37%;
+  right: -45%;
   bottom: 0;
   z-index: -4;
-  width: 1000px;
+  min-width: 1000px;
+  height: 352px;
+  background-color: #5368df;
+  border-top-left-radius: 316.5px;
+  border-bottom-left-radius: 316.5px;
+}
+
+main .features-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 149px;
+}
+
+main .features-container .features-container-header {
+  text-align: center;
+  width: 540px;
+  height: 152px;
+}
+
+main .features-container .features-container-header h2 {
+  margin-bottom: 16px;
+  font-size: 32px;
+}
+
+main .features-container .features-container-tabs {
+  width: 730px;
+  height: 49px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-bottom: 1px solid #9b9b9b;
+  margin-bottom: 72px;
+}
+
+main .features-container .features-container-tabs a {
+  text-align: center;
+  text-decoration: none;
+  height: 100%;
+  width: 243px;
+  font-size: 16px;
+  color: #252b46;
+}
+
+main .features-container .features-container-tabs a:nth-child(1) {
+  border-bottom: 4px solid #fa5757;
+}
+
+main .features-container .features-container-slideshow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .features-container .features-container-slideshow .tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 1106px;
+  height: 346px;
+}
+
+main .features-container .features-container-slideshow .tab .tab-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 445px;
+  height: 232px;
+}
+
+main .features-container .features-container-slideshow .tab .tab-details h2 {
+  font-size: 32px;
+  color: #252b46;
+  font-weight: 500;
+}
+
+main .features-container .features-container-slideshow .tab .tab-details button {
+  width: 114px;
+  height: 48px;
+  border-radius: 5px;
+  border: none;
+  background-color: #5368df;
+  color: white;
+  -webkit-box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.2);
+          box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.2);
+  font-size: 14px;
+}
+
+main .features-container .curved-rectangle {
+  position: absolute;
+  left: -45%;
+  bottom: 0;
+  z-index: -4;
+  min-width: 1000px;
   height: 352px;
   background-color: #5368df;
   border-top-left-radius: 316.5px;
