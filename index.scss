@@ -52,7 +52,7 @@ header {
     align-items: center;
     height: 40px;
     justify-content: space-between;
-    // padding: 5% 10%;
+    padding: 5% 10%;
 
     .nav-bar-container-links {
       font-size: 13px;
@@ -333,20 +333,19 @@ main {
         }
       }
     }
-  }
-
-  button {
-    display: block;
-    border: none;
-    height: 48px;
-    margin: auto;
-    border-radius: 5px;
-    width: 113px;
-    font-size: 14px;
-    font-weight: 600;
-    background-color: $softblue;
-    color: white;
-    box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.2);
+    button {
+      display: block;
+      border: none;
+      height: 48px;
+      margin: auto;
+      border-radius: 5px;
+      width: 113px;
+      font-size: 14px;
+      font-weight: 600;
+      background-color: $softblue;
+      color: white;
+      box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.2);
+    }
   }
 }
 
@@ -380,7 +379,7 @@ footer {
       border-radius: 5px;
       border: none;
       padding: 5px;
-      margin-right: 5px;
+      margin-right: 16px;
     }
     button {
       border: none;
@@ -404,6 +403,10 @@ footer {
 
     .footer-container-links {
       display: flex;
+      width: 507px;
+      height: 25px;
+      justify-content: space-between;
+      align-items: center;
 
       img {
         color: white;
@@ -417,6 +420,12 @@ footer {
         font-size: 13px;
         font-weight: 400;
       }
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: space-between;
+      width: 88px;
     }
   }
 }
