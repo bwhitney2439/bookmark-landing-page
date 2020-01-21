@@ -43,24 +43,26 @@
     </header>
 
     <main>
-      <section class="bookmark-container" id="title">
-        <div class="bookmark-container-header">
-          <h1>
-            A Simple Bookmark Manager
-          </h1>
+      <section class="bookmark" id="title">
+        <div class="bookmark-container">
+          <div class="bookmark-container-header">
+            <h1>
+              A Simple Bookmark Manager
+            </h1>
 
-          <p>
-            A clean and simple interface to organize your favourite websites.
-            Open a new browser tab and see your sites load instantly. Try it for
-            free.
-          </p>
+            <p>
+              A clean and simple interface to organize your favourite websites.
+              Open a new browser tab and see your sites load instantly. Try it
+              for free.
+            </p>
 
-          <div class="bookmark-container-buttons">
-            <button>Get it on Chrome</button>
-            <button>Get it on Firefox</button>
+            <div class="bookmark-container-buttons">
+              <button>Get it on Chrome</button>
+              <button>Get it on Firefox</button>
+            </div>
           </div>
+          <img src="./images/illustration-hero.svg" alt="" />
         </div>
-        <img src="./images/illustration-hero.svg" alt="" />
         <div class="curved-rectangle"></div>
       </section>
 
@@ -76,13 +78,13 @@
           </p>
         </div>
         <div class="features-container-tabs">
-          <a href="./">Simple Bookmarking</a>
+          <a class="selected" href="./">Simple Bookmarking</a>
           <a href="./">Speedy Searching</a>
           <a href="./">Easy Sharing</a>
         </div>
 
         <div class="features-container-slideshow">
-          <div class="tab">
+          <div class="tab ">
             <img src="./images/illustration-features-tab-1.svg" alt="" />
             <div class="tab-details">
               <h2>Bookmark in one click</h2>
@@ -95,26 +97,29 @@
             </div>
           </div>
 
-          <div class="tab hide">
+          <div class="tab " style="margin-left: 5%;">
             <img src="./images/illustration-features-tab-2.svg" alt="" />
-            <h2>Intelligent search</h2>
-            <p>
-              Our powerful search feature will help you find saved sites in no
-              time at all. No need to trawl through all of your bookmarks.
-            </p>
-            <button>More Info</button>
+            <div class="tab-details">
+              <h2>Intelligent search</h2>
+              <p>
+                Our powerful search feature will help you find saved sites in no
+                time at all. No need to trawl through all of your bookmarks.
+              </p>
+              <button>More Info</button>
+            </div>
           </div>
 
-          <div class="tab hide">
+          <div class="tab active" style="margin-left: 5%;">
             <img src="./images/illustration-features-tab-3.svg" alt="" />
-            <h2>Share your bookmarks</h2>
-            <p>
-              Share your bookmarks Easily share your bookmarks and collections
-              with others. Create a shareable link that you can send at the
-              click of a button.
-            </p>
-            <button>More Info</button>
-          </div>
+            <div class="tab-details">
+              <h2>Share your bookmarks</h2>
+              <p>
+                Share your bookmarks Easily share your bookmarks and collections
+                with others. Create a shareable link that you can send at the
+                click of a button.
+              </p>
+              <button>More Info</button>
+            </div>
         </div>
         <div class="curved-rectangle"></div>
       </section>

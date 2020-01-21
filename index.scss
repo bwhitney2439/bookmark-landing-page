@@ -35,6 +35,10 @@ h3 {
   font-size: 20px;
 }
 
+a:hover {
+  color: $softred;
+}
+
 p {
   opacity: 50%;
   font-weight: 400;
@@ -51,8 +55,11 @@ header {
     display: flex;
     align-items: center;
     height: 40px;
+    max-width: 1104px;
+    margin: 48px auto 108px auto;
+
     justify-content: space-between;
-    padding: 5% 10%;
+    // padding: 5% 10%;
 
     .nav-bar-container-links {
       font-size: 13px;
@@ -79,47 +86,50 @@ header {
 }
 
 main {
-  .bookmark-container {
+  .bookmark {
     position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 3% 3% 3% 10%;
 
-    .bookmark-container-header {
-      margin-right: 65px;
-      width: 540px;
-      height: 292px;
+    .bookmark-container {
       display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-self: center;
+      margin: 0 auto 80px auto;
+      max-width: 1184px;
 
-      p {
-        font-size: 18px;
-      }
-      .bookmark-container-buttons {
+      .bookmark-container-header {
+        margin: 0 auto;
+        margin-right: 65px;
+        width: 540px;
+        height: 292px;
         display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-self: center;
 
-        button {
-          border: none;
-          height: 48px;
-          border-radius: 5px;
-          width: 161px;
-          font-size: 14px;
-          font-weight: 600;
+        p {
+          font-size: 18px;
+        }
+        .bookmark-container-buttons {
+          display: flex;
 
-          &:nth-child(1) {
-            background-color: $softblue;
-            color: white;
-            margin-right: 1rem;
-            box-shadow: 0px 8px 8px -4px rgba(74, 94, 208, 0.2);
-          }
-          &:nth-child(2) {
-            background-color: #f7f7f7;
-            color: $verydarkblue;
-            opacity: 75%;
-            box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.2);
+          button {
+            border: none;
+            height: 48px;
+            border-radius: 5px;
+            width: 161px;
+            font-size: 14px;
+            font-weight: 600;
+
+            &:nth-child(1) {
+              background-color: $softblue;
+              color: white;
+              margin-right: 1rem;
+              box-shadow: 0px 8px 8px -4px rgba(74, 94, 208, 0.2);
+            }
+            &:nth-child(2) {
+              background-color: #f7f7f7;
+              color: $verydarkblue;
+              opacity: 75%;
+              box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.2);
+            }
           }
         }
       }
@@ -143,10 +153,9 @@ main {
 
   .features-container {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 5% 10%;
+
+    margin-bottom: 149px;
+    // padding: 5% 10%;
 
     .features-container-header {
       display: flex;
@@ -155,6 +164,7 @@ main {
       text-align: center;
       width: 540px;
       height: 152px;
+      margin: auto;
       margin-bottom: 72px;
     }
 
@@ -164,6 +174,7 @@ main {
       display: flex;
       justify-content: space-around;
       border-bottom: 1px solid rgb(155, 155, 155);
+      margin: auto;
       margin-bottom: 72px;
 
       a {
@@ -174,22 +185,23 @@ main {
         font-size: 16px;
         color: $verydarkblue;
 
-        &:nth-child(1) {
+        &.selected {
           border-bottom: 4px solid $softred;
         }
       }
     }
 
     .features-container-slideshow {
-      display: flex;
-      flex-direction: column;
-
+      max-width: 1031px;
+      margin: auto;
       .tab {
-        display: flex;
+        display: none;
         justify-content: space-between;
         align-items: center;
-        width: 1106px;
         height: 346px;
+        &.active {
+          display: flex;
+        }
 
         .tab-details {
           display: flex;
@@ -210,6 +222,7 @@ main {
           }
         }
       }
+
       .hide {
         display: none;
       }
@@ -218,7 +231,7 @@ main {
     .curved-rectangle {
       position: absolute;
       left: 0;
-      bottom: 0;
+      bottom: -10%;
       z-index: -4;
       width: 45%;
       height: 352px;

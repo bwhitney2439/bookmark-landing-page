@@ -28,6 +28,10 @@ h3 {
   font-size: 20px;
 }
 
+a:hover {
+  color: #fa5757;
+}
+
 p {
   opacity: 50%;
   font-weight: 400;
@@ -47,10 +51,11 @@ header .nav-bar-container {
       -ms-flex-align: center;
           align-items: center;
   height: 40px;
+  max-width: 1104px;
+  margin: 48px auto 108px auto;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 5% 10%;
 }
 
 header .nav-bar-container .nav-bar-container-links {
@@ -78,21 +83,20 @@ header .nav-bar-container .nav-bar-container-links button {
           box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.2);
 }
 
-main .bookmark-container {
+main .bookmark {
   position: relative;
+}
+
+main .bookmark .bookmark-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 3% 3% 3% 10%;
+  margin: 0 auto 80px auto;
+  max-width: 1184px;
 }
 
-main .bookmark-container .bookmark-container-header {
+main .bookmark .bookmark-container .bookmark-container-header {
+  margin: 0 auto;
   margin-right: 65px;
   width: 540px;
   height: 292px;
@@ -110,17 +114,17 @@ main .bookmark-container .bookmark-container-header {
       align-self: center;
 }
 
-main .bookmark-container .bookmark-container-header p {
+main .bookmark .bookmark-container .bookmark-container-header p {
   font-size: 18px;
 }
 
-main .bookmark-container .bookmark-container-header .bookmark-container-buttons {
+main .bookmark .bookmark-container .bookmark-container-header .bookmark-container-buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-main .bookmark-container .bookmark-container-header .bookmark-container-buttons button {
+main .bookmark .bookmark-container .bookmark-container-header .bookmark-container-buttons button {
   border: none;
   height: 48px;
   border-radius: 5px;
@@ -129,7 +133,7 @@ main .bookmark-container .bookmark-container-header .bookmark-container-buttons 
   font-weight: 600;
 }
 
-main .bookmark-container .bookmark-container-header .bookmark-container-buttons button:nth-child(1) {
+main .bookmark .bookmark-container .bookmark-container-header .bookmark-container-buttons button:nth-child(1) {
   background-color: #5368df;
   color: white;
   margin-right: 1rem;
@@ -137,7 +141,7 @@ main .bookmark-container .bookmark-container-header .bookmark-container-buttons 
           box-shadow: 0px 8px 8px -4px rgba(74, 94, 208, 0.2);
 }
 
-main .bookmark-container .bookmark-container-header .bookmark-container-buttons button:nth-child(2) {
+main .bookmark .bookmark-container .bookmark-container-header .bookmark-container-buttons button:nth-child(2) {
   background-color: #f7f7f7;
   color: #252b46;
   opacity: 75%;
@@ -145,12 +149,12 @@ main .bookmark-container .bookmark-container-header .bookmark-container-buttons 
           box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.2);
 }
 
-main .bookmark-container img {
+main .bookmark img {
   max-width: 100%;
   height: auto;
 }
 
-main .bookmark-container .curved-rectangle {
+main .bookmark .curved-rectangle {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -164,17 +168,7 @@ main .bookmark-container .curved-rectangle {
 
 main .features-container {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 5% 10%;
+  margin-bottom: 149px;
 }
 
 main .features-container .features-container-header {
@@ -191,6 +185,7 @@ main .features-container .features-container-header {
   text-align: center;
   width: 540px;
   height: 152px;
+  margin: auto;
   margin-bottom: 72px;
 }
 
@@ -203,6 +198,7 @@ main .features-container .features-container-tabs {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   border-bottom: 1px solid #9b9b9b;
+  margin: auto;
   margin-bottom: 72px;
 }
 
@@ -215,32 +211,30 @@ main .features-container .features-container-tabs a {
   color: #252b46;
 }
 
-main .features-container .features-container-tabs a:nth-child(1) {
+main .features-container .features-container-tabs a.selected {
   border-bottom: 4px solid #fa5757;
 }
 
 main .features-container .features-container-slideshow {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  max-width: 1031px;
+  margin: auto;
 }
 
 main .features-container .features-container-slideshow .tab {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 1106px;
   height: 346px;
+}
+
+main .features-container .features-container-slideshow .tab.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 main .features-container .features-container-slideshow .tab .tab-details {
@@ -277,7 +271,7 @@ main .features-container .features-container-slideshow .hide {
 main .features-container .curved-rectangle {
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -10%;
   z-index: -4;
   width: 45%;
   height: 352px;
