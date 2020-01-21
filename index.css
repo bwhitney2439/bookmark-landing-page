@@ -11,16 +11,32 @@ body {
   font-size: 18px;
 }
 
-h1 {
+h1,
+h2,
+h3 {
   font-size: 48px;
+  font-family: "Rubik";
   font-weight: 500;
   color: #252b46;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 20px;
 }
 
 p {
   opacity: 50%;
   font-weight: 400;
   line-height: 1.5;
+  font-size: 18px;
+}
+
+button {
+  font-weight: 500;
 }
 
 header .nav-bar-container {
@@ -34,9 +50,6 @@ header .nav-bar-container {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-left: 171px;
-  margin-top: 48px;
-  margin-right: 165px;
 }
 
 header .nav-bar-container .nav-bar-container-links {
@@ -59,20 +72,9 @@ header .nav-bar-container .nav-bar-container-links button {
   color: white;
   border-radius: 5px;
   text-transform: uppercase;
-  border: 1px solid #9194a1;
-}
-
-main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  border: 1px inside #9194a1;
+  -webkit-box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.2);
+          box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.2);
 }
 
 main .bookmark-container {
@@ -83,15 +85,14 @@ main .bookmark-container {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-right: 91.5px;
-  margin-left: 165px;
-  margin-top: 114px;
-  margin-bottom: 80px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3% 3% 3% 10%;
 }
 
 main .bookmark-container .bookmark-container-header {
   margin-right: 65px;
-  font-weight: medium;
   width: 540px;
   height: 292px;
   display: -webkit-box;
@@ -143,12 +144,17 @@ main .bookmark-container .bookmark-container-header .bookmark-container-buttons 
           box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.2);
 }
 
+main .bookmark-container img {
+  max-width: 100%;
+  height: auto;
+}
+
 main .bookmark-container .curved-rectangle {
   position: absolute;
-  right: -45%;
+  right: 0;
   bottom: 0;
   z-index: -4;
-  min-width: 1000px;
+  width: 35%;
   height: 352px;
   background-color: #5368df;
   border-top-left-radius: 316.5px;
@@ -167,18 +173,24 @@ main .features-container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 149px;
+  padding: 5% 10%;
 }
 
 main .features-container .features-container-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   text-align: center;
   width: 540px;
   height: 152px;
-}
-
-main .features-container .features-container-header h2 {
-  margin-bottom: 16px;
-  font-size: 32px;
+  margin-bottom: 72px;
 }
 
 main .features-container .features-container-tabs {
@@ -245,12 +257,6 @@ main .features-container .features-container-slideshow .tab .tab-details {
   height: 232px;
 }
 
-main .features-container .features-container-slideshow .tab .tab-details h2 {
-  font-size: 32px;
-  color: #252b46;
-  font-weight: 500;
-}
-
 main .features-container .features-container-slideshow .tab .tab-details button {
   width: 114px;
   height: 48px;
@@ -263,15 +269,237 @@ main .features-container .features-container-slideshow .tab .tab-details button 
   font-size: 14px;
 }
 
+main .features-container .features-container-slideshow .hide {
+  display: none;
+}
+
 main .features-container .curved-rectangle {
   position: absolute;
-  left: -45%;
+  left: 0;
   bottom: 0;
   z-index: -4;
-  min-width: 1000px;
+  width: 45%;
   height: 352px;
   background-color: #5368df;
-  border-top-left-radius: 316.5px;
-  border-bottom-left-radius: 316.5px;
+  border-top-right-radius: 316.5px;
+  border-bottom-right-radius: 316.5px;
+}
+
+main .extensions-container {
+  padding: 5% 0;
+}
+
+main .extensions-container .extensions-container-heading {
+  max-width: 541px;
+  max-height: 124px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 48px;
+}
+
+main .extensions-container .extensions-container-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 910px;
+  height: 451px;
+  margin: auto;
+}
+
+main .extensions-container .extensions-container-cards .card {
+  padding: 49px 24px 24px 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 280px;
+  height: 371px;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 10px 20px -5px rgba(73, 93, 207, 0.2);
+          box-shadow: 0px 10px 20px -5px rgba(73, 93, 207, 0.2);
+}
+
+main .extensions-container .extensions-container-cards .card:nth-child(2) {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+main .extensions-container .extensions-container-cards .card:nth-child(3) {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+main .extensions-container .extensions-container-cards .card .details {
+  text-align: center;
+}
+
+main .extensions-container .extensions-container-cards .card .details h3 {
+  margin-bottom: 0.5rem;
+}
+
+main .extensions-container .extensions-container-cards .card .details p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: unset;
+}
+
+main .extensions-container .extensions-container-cards .card button {
+  border: none;
+  height: 48px;
+  border-radius: 5px;
+  width: 232px;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: #5368df;
+  color: white;
+  -webkit-box-shadow: 0px 8px 8px -4px rgba(74, 94, 208, 0.2);
+          box-shadow: 0px 8px 8px -4px rgba(74, 94, 208, 0.2);
+}
+
+main .faq-container {
+  padding: 5% 10% 150px 10%;
+}
+
+main .faq-container .faq-container-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  max-width: 540px;
+  height: 124px;
+  margin: 0 auto;
+  margin-bottom: 56px;
+}
+
+main .faq-container .faq-container-menu {
+  max-width: 540px;
+  margin: 0 auto;
+  margin-bottom: 54px;
+}
+
+main .faq-container .faq-container-menu .question {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding: 19px 0;
+}
+
+main .faq-container .faq-container-menu .question p {
+  color: #252b46;
+  opacity: 100%;
+}
+
+main .faq-container .faq-container-menu .question img {
+  float: right;
+}
+
+main .faq-container .faq-container-menu .question .answer {
+  display: none;
+}
+
+main button {
+  display: block;
+  border: none;
+  height: 48px;
+  margin: auto;
+  border-radius: 5px;
+  width: 113px;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: #5368df;
+  color: white;
+  -webkit-box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.2);
+          box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.2);
+}
+
+footer .contactus-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 58px 0 74px 0;
+  background-color: #5368df;
+  text-align: center;
+  height: 360px;
+}
+
+footer .contactus-container p {
+  color: white;
+  opacity: 100%;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: 5px;
+}
+
+footer .contactus-container h2 {
+  color: white;
+  width: 411px;
+  margin: auto;
+}
+
+footer .contactus-container input {
+  width: 300px;
+  height: 48px;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  margin-right: 5px;
+}
+
+footer .contactus-container button {
+  border: none;
+  height: 48px;
+  margin: auto;
+  border-radius: 5px;
+  width: 113px;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: #fa5757;
+  color: white;
+  -webkit-box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.2);
+          box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.2);
+}
+
+footer .footer-container {
+  background-color: #252b46;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .footer-container .footer-container-links img {
+  color: white;
 }
 /*# sourceMappingURL=index.css.map */

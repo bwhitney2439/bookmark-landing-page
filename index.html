@@ -34,16 +34,16 @@
         <img src="./images/logo-bookmark.svg" alt="" />
 
         <div class="nav-bar-container-links">
-          <a href="./">Features</a>
-          <a href="./">Pricing</a>
-          <a href="./">Contact</a>
+          <a href="#features">Features</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#contact">Contact</a>
           <button>Login</button>
         </div>
       </div>
     </header>
 
     <main>
-      <section class="bookmark-container">
+      <section class="bookmark-container" id="title">
         <div class="bookmark-container-header">
           <h1>
             A Simple Bookmark Manager
@@ -64,7 +64,7 @@
         <div class="curved-rectangle"></div>
       </section>
 
-      <section class="features-container">
+      <section class="features-container" id="features">
         <div class="features-container-header">
           <h2>
             Features
@@ -95,7 +95,7 @@
             </div>
           </div>
 
-          <!-- <div class="tab hide">
+          <div class="tab hide">
             <img src="./images/illustration-features-tab-2.svg" alt="" />
             <h2>Intelligent search</h2>
             <p>
@@ -114,12 +114,12 @@
               click of a button.
             </p>
             <button>More Info</button>
-          </div> -->
+          </div>
         </div>
         <div class="curved-rectangle"></div>
       </section>
 
-      <section class="extensions-container">
+      <section class="extensions-container" id="pricing">
         <div class="extensions-container-heading">
           <h2>Download the extension</h2>
           <p>
@@ -128,26 +128,32 @@
           </p>
         </div>
         <div class="extensions-container-cards">
-          <div class="card1">
+          <div class="card">
             <img src="./images/logo-chrome.svg" alt="" />
-            <h3>Add to Chrome</h3>
-            <small>Minimum version 62</small>
+            <div class="details">
+              <h3>Add to Chrome</h3>
+              <p>Minimum version 62</p>
+            </div>
             <img src="./images/bg-dots.svg" alt="" />
-            <button>Add to Chrome Add & Install Extension</button>
+            <button>Add & Install Extension</button>
           </div>
-          <div class="card2">
+          <div class="card">
             <img src="./images/logo-firefox.svg" alt="" />
-            <h3>Add to Firefox</h3>
-            <small>Minimum version 55</small>
+            <div class="details">
+              <h3>Add to Firefox</h3>
+              <p>Minimum version 55</p>
+            </div>
             <img src="./images/bg-dots.svg" alt="" />
-            <button>Add to Chrome Add & Install Extension</button>
+            <button>Add & Install Extension</button>
           </div>
-          <div class="card3">
+          <div class="card">
             <img src="./images/logo-opera.svg" alt="" />
-            <h3>Add to Opera</h3>
-            <small>Minimum version 46</small>
+            <div class="details">
+              <h3>Add to Opera</h3>
+              <p>Minimum version 46</p>
+            </div>
             <img src="./images/bg-dots.svg" alt="" />
-            <button>Add to Chrome Add & Install Extension</button>
+            <button>Add & Install Extension</button>
           </div>
         </div>
       </section>
@@ -165,7 +171,7 @@
           <div class="question">
             <p>What is Bookmark?</p>
             <img src="./images/icon-arrow.svg" alt="" />
-            <img src="./images/icon-close.svg" alt="" />
+            <!-- <img src="./images/icon-close.svg" alt="" /> -->
             <div class="answer">
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
@@ -177,7 +183,7 @@
           <div class="question">
             <p>How can I request a new browser?</p>
             <img src="./images/icon-arrow.svg" alt="" />
-            <img src="./images/icon-close.svg" alt="" />
+            <!-- <img src="./images/icon-close.svg" alt="" /> -->
             <div class="answer">
               <p>
                 Vivamus luctus eros aliquet convallis ultricies. Mauris augue
@@ -192,7 +198,7 @@
           <div class="question">
             <p>Is there a mobile app?</p>
             <img src="./images/icon-arrow.svg" alt="" />
-            <img src="./images/icon-close.svg" alt="" />
+            <!-- <img src="./images/icon-close.svg" alt="" /> -->
             <div class="answer">
               <p>
                 Sed consectetur quam id neque fermentum accumsan. Praesent
@@ -205,7 +211,7 @@
           <div class="question">
             <p>What about other Chromium browsers?</p>
             <img src="./images/icon-arrow.svg" alt="" />
-            <img src="./images/icon-close.svg" alt="" />
+            <!-- <img src="./images/icon-close.svg" alt="" /> -->
             <div class="answer">
               <p>
                 Integer condimentum ipsum id imperdiet finibus. Vivamus in
@@ -222,8 +228,8 @@
     </main>
 
     <footer>
-      <section class="contactus-container">
-        <p>35,000+ alreadt joined</p>
+      <section class="contactus-container" id="contact">
+        <p>35,000+ already joined</p>
         <h2>Stay up-to-date with what we’re doing</h2>
 
         <div class="contactus-container-form">
