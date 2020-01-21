@@ -399,10 +399,23 @@ footer {
   .footer-container {
     background-color: $verydarkblue;
     display: flex;
+    justify-content: space-between;
+    padding: 36px 165px;
 
     .footer-container-links {
+      display: flex;
+
       img {
         color: white;
+      }
+
+      p {
+        margin-right: 5px;
+        opacity: 100%;
+        color: white;
+        text-transform: uppercase;
+        font-size: 13px;
+        font-weight: 400;
       }
     }
   }
