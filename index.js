@@ -6,10 +6,10 @@ $(".question").click(function() {
   ) {
     $(this)
       .find("img")
-      .fadeOut(function() {
+      .fadeOut("fast", function() {
         $(this)
           .attr("src", "./images/icon-arrow-close.svg")
-          .fadeIn();
+          .fadeIn("fast");
       });
 
     $(this)
@@ -18,10 +18,10 @@ $(".question").click(function() {
   } else {
     $(this)
       .find("img")
-      .fadeOut(function() {
+      .fadeOut("fast", function() {
         $(this)
           .attr("src", "./images/icon-arrow.svg")
-          .fadeIn();
+          .fadeIn("fast");
       });
 
     $(this)
