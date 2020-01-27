@@ -411,11 +411,7 @@ main .faq-container .faq-container-menu .question p {
   opacity: 100%;
 }
 
-main .faq-container .faq-container-menu .question img {
-  float: right;
-}
-
-main .faq-container .faq-container-menu .question .answer {
+main .faq-container .faq-container-menu .answer {
   display: none;
 }
 

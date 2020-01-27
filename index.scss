@@ -338,12 +338,11 @@ main {
         }
 
         img {
-          float: right;
+          // float: right;
         }
-
-        .answer {
-          display: none;
-        }
+      }
+      .answer {
+        display: none;
       }
     }
     button {
