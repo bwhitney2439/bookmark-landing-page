@@ -338,6 +338,7 @@ main {
         }
 
         img {
+<<<<<<< HEAD
           float: right;
           padding-right: 24px;
         }
@@ -349,6 +350,13 @@ main {
 
       hr {
         opacity: 50%;
+=======
+          // float: right;
+        }
+>>>>>>> 0ac4b59da3f07b94aa55a2c855eecf9e76a514dc
+      }
+      .answer {
+        display: none;
       }
     }
 

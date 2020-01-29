@@ -29,6 +29,7 @@ $(".question").click(function() {
       .slideUp("slow");
   }
 });
+<<<<<<< HEAD
 
 $(".tab:first").css("display", "flex");
 
@@ -46,3 +47,5 @@ $(".features-container-tabs a").click(function() {
     .hide()
     .fadeIn("slow");
 });
+=======
+>>>>>>> 0ac4b59da3f07b94aa55a2c855eecf9e76a514dc

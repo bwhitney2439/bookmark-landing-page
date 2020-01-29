@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -48,14 +48,14 @@ header .nav-bar-container {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   height: 40px;
   max-width: 1104px;
   margin: 48px auto 108px auto;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 header .nav-bar-container .nav-bar-container-links {
@@ -80,7 +80,7 @@ header .nav-bar-container .nav-bar-container-links button {
   text-transform: uppercase;
   border: 1px inside #9194a1;
   -webkit-box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.2);
-          box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.2);
+  box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.2);
 }
 
 main .bookmark {
@@ -105,26 +105,35 @@ main .bookmark .bookmark-container .bookmark-container-header {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -ms-flex-item-align: center;
-      align-self: center;
+  align-self: center;
 }
 
 main .bookmark .bookmark-container .bookmark-container-header p {
   font-size: 18px;
 }
 
-main .bookmark .bookmark-container .bookmark-container-header .bookmark-container-buttons {
+main
+  .bookmark
+  .bookmark-container
+  .bookmark-container-header
+  .bookmark-container-buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-main .bookmark .bookmark-container .bookmark-container-header .bookmark-container-buttons button {
+main
+  .bookmark
+  .bookmark-container
+  .bookmark-container-header
+  .bookmark-container-buttons
+  button {
   border: none;
   height: 48px;
   border-radius: 5px;
@@ -133,20 +142,30 @@ main .bookmark .bookmark-container .bookmark-container-header .bookmark-containe
   font-weight: 600;
 }
 
-main .bookmark .bookmark-container .bookmark-container-header .bookmark-container-buttons button:nth-child(1) {
+main
+  .bookmark
+  .bookmark-container
+  .bookmark-container-header
+  .bookmark-container-buttons
+  button:nth-child(1) {
   background-color: #5368df;
   color: white;
   margin-right: 1rem;
   -webkit-box-shadow: 0px 8px 8px -4px rgba(74, 94, 208, 0.2);
-          box-shadow: 0px 8px 8px -4px rgba(74, 94, 208, 0.2);
+  box-shadow: 0px 8px 8px -4px rgba(74, 94, 208, 0.2);
 }
 
-main .bookmark .bookmark-container .bookmark-container-header .bookmark-container-buttons button:nth-child(2) {
+main
+  .bookmark
+  .bookmark-container
+  .bookmark-container-header
+  .bookmark-container-buttons
+  button:nth-child(2) {
   background-color: #f7f7f7;
   color: #252b46;
   opacity: 75%;
   -webkit-box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.2);
-          box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.2);
+  box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.2);
 }
 
 main .bookmark img {
@@ -177,11 +196,11 @@ main .features-container .features-container-header {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   text-align: center;
   width: 540px;
   height: 152px;
@@ -196,7 +215,7 @@ main .features-container .features-container-tabs {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   border-bottom: 1px solid #9b9b9b;
   margin: auto;
   margin-bottom: 72px;
@@ -223,11 +242,11 @@ main .features-container .features-container-slideshow {
 main .features-container .features-container-slideshow .tab {
   display: none;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   height: 346px;
 }
 
@@ -243,16 +262,21 @@ main .features-container .features-container-slideshow .tab .tab-details {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   width: 445px;
   height: 232px;
 }
 
-main .features-container .features-container-slideshow .tab .tab-details button {
+main
+  .features-container
+  .features-container-slideshow
+  .tab
+  .tab-details
+  button {
   width: 114px;
   height: 48px;
   border-radius: 5px;
@@ -260,7 +284,7 @@ main .features-container .features-container-slideshow .tab .tab-details button 
   background-color: #5368df;
   color: white;
   -webkit-box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.2);
-          box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.2);
+  box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.2);
   font-size: 14px;
 }
 
@@ -297,8 +321,8 @@ main .extensions-container .extensions-container-cards {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   width: 910px;
   height: 451px;
   margin: auto;
@@ -311,30 +335,30 @@ main .extensions-container .extensions-container-cards .card {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 280px;
   height: 371px;
   border-radius: 15px;
   -webkit-box-shadow: 0px 10px 20px -5px rgba(73, 93, 207, 0.2);
-          box-shadow: 0px 10px 20px -5px rgba(73, 93, 207, 0.2);
+  box-shadow: 0px 10px 20px -5px rgba(73, 93, 207, 0.2);
 }
 
 main .extensions-container .extensions-container-cards .card:nth-child(2) {
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-grid-row-align: center;
+  align-self: center;
 }
 
 main .extensions-container .extensions-container-cards .card:nth-child(3) {
   -ms-flex-item-align: end;
-      align-self: flex-end;
+  align-self: flex-end;
 }
 
 main .extensions-container .extensions-container-cards .card .details {
@@ -361,7 +385,7 @@ main .extensions-container .extensions-container-cards .card button {
   background-color: #5368df;
   color: white;
   -webkit-box-shadow: 0px 8px 8px -4px rgba(74, 94, 208, 0.2);
-          box-shadow: 0px 8px 8px -4px rgba(74, 94, 208, 0.2);
+  box-shadow: 0px 8px 8px -4px rgba(74, 94, 208, 0.2);
 }
 
 main .faq-container {
@@ -374,11 +398,11 @@ main .faq-container .faq-container-header {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   text-align: center;
   max-width: 540px;
   height: 124px;
@@ -397,11 +421,11 @@ main .faq-container .faq-container-menu .question {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   width: 100%;
   padding: 19px 0;
 }
@@ -437,7 +461,7 @@ main .faq-container button {
   background-color: #5368df;
   color: white;
   -webkit-box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.2);
-          box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.2);
+  box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.2);
 }
 
 footer .contactus-container {
@@ -446,8 +470,8 @@ footer .contactus-container {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   padding: 58px 0 74px 0;
   background-color: #5368df;
   text-align: center;
@@ -490,7 +514,7 @@ footer .contactus-container button {
   background-color: #fa5757;
   color: white;
   -webkit-box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.2);
-          box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.2);
+  box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.2);
 }
 
 footer .footer-container {
@@ -499,8 +523,8 @@ footer .footer-container {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   padding: 36px 165px;
 }
 
@@ -511,11 +535,11 @@ footer .footer-container .footer-container-links {
   width: 507px;
   height: 25px;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 footer .footer-container .footer-container-links img {
@@ -536,8 +560,8 @@ footer .footer-container .social-icons {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   width: 88px;
 }
 /*# sourceMappingURL=index.css.map */
