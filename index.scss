@@ -184,16 +184,16 @@ main {
         width: 243px;
         font-size: 16px;
         color: $verydarkblue;
-
-        &.selected {
-          border-bottom: 4px solid $softred;
-        }
+      }
+      .fade {
+        border-bottom: 4px solid $softred;
       }
     }
 
     .features-container-slideshow {
       max-width: 1031px;
       margin: auto;
+
       .tab {
         display: none;
         justify-content: space-between;
@@ -339,13 +339,19 @@ main {
 
         img {
           float: right;
-        }
-
-        .answer {
-          display: none;
+          padding-right: 24px;
         }
       }
+      .answer {
+        display: none;
+        padding-bottom: 19px;
+      }
+
+      hr {
+        opacity: 50%;
+      }
     }
+
     button {
       display: block;
       border: none;

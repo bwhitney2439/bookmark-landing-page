@@ -211,7 +211,7 @@ main .features-container .features-container-tabs a {
   color: #252b46;
 }
 
-main .features-container .features-container-tabs a.selected {
+main .features-container .features-container-tabs .fade {
   border-bottom: 4px solid #fa5757;
 }
 
@@ -413,10 +413,16 @@ main .faq-container .faq-container-menu .question p {
 
 main .faq-container .faq-container-menu .question img {
   float: right;
+  padding-right: 24px;
 }
 
-main .faq-container .faq-container-menu .question .answer {
+main .faq-container .faq-container-menu .answer {
   display: none;
+  padding-bottom: 19px;
+}
+
+main .faq-container .faq-container-menu hr {
+  opacity: 50%;
 }
 
 main .faq-container button {
